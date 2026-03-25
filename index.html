@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <div class="attribution">
+    <form method="post">
+
+      <p>Contact Us</p>
+      <div class="name">
+        <div class="names">
+          <label>First Name</label>
+          <input type="name" placeholder="First Name" required/>
+          <b id="fname">This field is required</b>
+        </div>
+
+        <div class="names">
+          <label>Last Name</label>
+          <input type="name" placeholder="Last Name" required/>
+          <b id="lname"> This field is required</b>
+        </div>
+
+      </div>
+
+
+      <div class="email">
+        <label>Email Address</label>
+        <input type="email" placeholder="Email" required/>
+        <b id="email-error">Please enter a valid email address</b>
+     </div>
+
+    
+        <div class="query">
+        <label>Query Type</label>
+        <div class="name">
+        <label for="ge" class="option"><input type="radio" id="ge" value="General Enquiry" name="query" /> <p>General Enquiry</p></label>
+         <label for="sr" class="option"> <input type="radio" id="sr" value="Support Request" name="query" /><p>Support Request</p></label>
+        </div>
+        <b id="q-error">Please select a query type</b>
+        </div>
+
+        <div class="naming">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <b id="m-error"> This field is required</b>
+        </div>
+
+        <div class="naming">
+         <label> <input type="checkbox" />I consent to being contacted by the team</label>
+
+        <b id="c-error">To submit this form, please consent to being contacted</b>
+        </div>
+        <button onclick="onSubmit">Submit</button>
+      <!--  
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+ -->
+    </form>
+  </div>
+</body>
+
+<script src="script.js"></script>
+</html>

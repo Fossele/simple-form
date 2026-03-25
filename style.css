@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(186, 15%, 59%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.attribution{
+   padding: 1rem;
+    width: 40%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    border-radius: 1rem;
+
+}
+form{
+display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    
+}
+
+input[type = email]{
+    width: 100%;
+    height: 3.5vh;
+     border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+input[type = "name"]{
+    border-radius: 10px;
+    width: 100%;
+    height: 3.5vh;
+    border: 1px solid black;
+     padding: 10px;
+}
+
+.name{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.naming{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.email{
+    display: flex;
+    flex-direction: column; 
+}
+
+.option{
+     width: 48%;
+    height: 3.5vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+
+textarea{
+    width: 100%;
+    min-height: 5rem;
+     padding: 12px 20px;
+    field-sizing: content;
+    border-radius: 10px;
+}
+
+button{
+     width: 100%;
+    height: 3.5vh;
+     border-radius: 10px;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+}
