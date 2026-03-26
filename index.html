@@ -19,14 +19,14 @@
       <div class="name">
         <div class="names">
           <label>First Name</label>
-          <input type="name" placeholder="First Name" required/>
-          <b id="fname">This field is required</b>
+          <input type="name" id="firstname" placeholder="First Name" required/>
+          <b id="e-fname"></b>
         </div>
 
         <div class="names">
           <label>Last Name</label>
-          <input type="name" placeholder="Last Name" required/>
-          <b id="lname"> This field is required</b>
+          <input type="name" id="lastname" placeholder="Last Name" required/>
+          <b id="e-lname"></b>
         </div>
 
       </div>
@@ -34,8 +34,8 @@
 
       <div class="email">
         <label>Email Address</label>
-        <input type="email" placeholder="Email" required/>
-        <b id="email-error">Please enter a valid email address</b>
+        <input type="email" id="email" placeholder="Email" required/>
+        <b id="email-error"></b>
      </div>
 
     
@@ -50,8 +50,8 @@
 
         <div class="naming">
         <label>Message</label>
-        <textarea name="message"></textarea>
-        <b id="m-error"> This field is required</b>
+        <textarea name="message" id="message"></textarea>
+        <b id="m_error"></b>
         </div>
 
         <div class="naming">
@@ -59,7 +59,7 @@
 
         <b id="c-error">To submit this form, please consent to being contacted</b>
         </div>
-        <button onclick="onSubmit">Submit</button>
+        <button onclick="onSubmit()">Submit</button>
       <!--  
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
