@@ -11,13 +11,14 @@ let checkboxError = document.getElementById("c-error");
 let ge = document.getElementById("ge");
 let sr = document.getElementById("sr");
 let query = document.getElementById("q-error");
+let success = document.getElementById("success");
 
 
 function validate(){
 
 }
 
-function onSubmit(){
+function test(){
      errorM.innerHTML =="This field is required";
 
     if(!fname.value){
@@ -49,7 +50,7 @@ function onSubmit(){
     }
    // || checkbox.checked || ge.checked || sr.checked
    if((fname.value || lname.value || message.value|| testing || checkbox.checked || ge.checked || sr.checked)){
-    alert("You submited")
+    success.style.display = "block";
    }
     
 }

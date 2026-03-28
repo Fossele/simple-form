@@ -12,9 +12,12 @@
 </head>
 
 <body>
+   <div id="success" style="display: none">
+      <p><img  src="assets/images/icon-success-check.svg"/><span>Message Sent!</span></p>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </diV>
   <div class="attribution">
     <form>
-
       <p>Contact Us</p>
       <div class="name">
         <div class="names">
@@ -55,14 +58,14 @@
         </div>
 
         <div class="naming">
-         <label> <input type="checkbox" id="checkbox"/>I consent to being contacted by the team</label>
+         <label class="consent"> <input type="checkbox" id="checkbox"/><p>I consent to being contacted by the team</p></label>
 
         <b id="c-error"></b>
         </div>
-        <button onclick="onSubmit()">Submit</button>
+        <button onclick="test()">Submit</button>
       <!--  
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  
+  
  -->
     </form>
   </div>
