@@ -1,3 +1,4 @@
+let form = getElementById("formId");
 let fname = document.getElementById("firstname");
 let fnameError = document.getElementById("e-fname");//firstname
 let lname = document.getElementById("lastname");//lastname
@@ -49,8 +50,15 @@ function test(){
       query.innerHTML = "Please select a query type";
     }
    // || checkbox.checked || ge.checked || sr.checked
-   if((fname.value || lname.value || message.value|| testing || checkbox.checked || ge.checked || sr.checked)){
-    success.style.display = "block";
+   
+
+   form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    if((fname.value || lname.value || message.value|| testing || checkbox.checked || ge.checked || sr.checked)){
+    success.classList.remove("hidden");
+   }else{
+    alert("duh");
    }
+   });
     
 }
